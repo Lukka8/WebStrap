@@ -1,0 +1,57 @@
+/* Dropdown main */
+
+.dropdown {
+    position: relative;
+    height: auto;
+    width: fit-content;
+    top: 0;
+    background-color: rgb(220, 220, 220);
+    border-radius: 8px;
+    overflow: hidden;
+    outline: none;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: fit-content;
+    padding: 0;
+    top: 35px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.842);
+}
+
+.dropdown a {
+    text-decoration: none;
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0 40px 0 40px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    color: black;
+}
+
+.dropdown a:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+/* Dropdown effects */
+
+.dropdown.block {
+    border-radius: 0;
+}
+
+.dropdown.noshadow {
+    box-shadow: none;
+}
+
+.dropdown.active {
+    display: flex;
+}
+
+/* Dropdown styles */
+
+/* Dropdown Directions */

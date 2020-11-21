@@ -1,0 +1,83 @@
+/* Modal MAin */
+
+
+.modal-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+}
+
+.modal-bg.active {
+    display: flex;
+}
+
+.modal.block {
+    border-radius: 0;
+}
+
+.modal-bg .modal .header h1 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.modal-bg .modal .content {
+    max-height: 250px;
+   overflow: hidden;
+   overflow-y: scroll;
+}
+
+.modal-bg .modal .content p {
+    width: 100%;
+    height: auto;
+    white-space: pre-wrap;
+ }
+ 
+
+.modal-bg .modal .actions {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.modal-bg .modal .actions button {
+    margin: 0px 10px 0px 10px;
+}
+
+.modal-bg.big .modal {
+    width: 100%;
+}
+
+.modal-bg.medium .modal {
+    width: 75%;
+}
+
+.modal-bg.small .modal {
+    width: 50%;
+}
+
+.modal-bg .modal {
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    height: fit-content;
+}
+
+/* Modal Center */
+
+.modal-bg.center {
+    align-items: center;
+}
+
+/* Modal Bottom */
+
+.modal-bg.bottom {
+    align-items: flex-end;
+}
