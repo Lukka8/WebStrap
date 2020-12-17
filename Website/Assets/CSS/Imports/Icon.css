@@ -1,0 +1,102 @@
+/*
+    Created: December 12, 2020
+    By: @Luka
+    Modified: December 16, 2020
+
+    Class: Icon
+
+*/
+
+.icon
+{
+    border: none;
+    border-radius: 64px;
+    transition: 0.5s;
+    width: auto;
+    height: auto;
+    transition: 0.5s;
+}
+
+/* Twitter */
+
+.icon.twitter i
+{
+    color: white;
+    transition: 0.5s;
+    margin: 5px;
+}
+
+.icon.twitter:hover
+{
+    background-color: rgb(0, 170, 255, 0.1);
+    box-shadow: 0 0 10px 4px rgb(0, 170, 255, 0.1);
+}
+
+.icon.twitter:hover > i
+{
+    color: rgb(0, 170, 255)!important;
+}
+
+
+/* Facebook */
+
+.icon.facebook i
+{
+    /*padding: 0px 1px 0px 1px;*/
+    color: white;
+    transition: 0.5s;
+    margin: 0px 5px 0px 5px;
+}
+
+.icon.facebook:hover
+{
+    background-color: rgb(0, 100, 255, 0.1);
+    box-shadow: 0 0 10px 4px rgb(0, 100, 255, 0.1);
+}
+
+.icon.facebook:hover > i
+{
+    color: rgb(0, 120, 255)!important;
+}
+
+/* Github */
+
+.icon.github i
+{
+    color: white;
+    transition: 0.5s;
+    margin: 5px;
+}
+
+.icon.github:hover
+{
+    background-color: rgba(196, 196, 196, 0.1);
+    box-shadow: 0 0 10px 4px rgba(196, 196, 196, 0.1);
+}
+
+.icon.github:hover > i
+{
+    color: rgb(156, 156, 156)!important;
+}
+
+
+/* Instagram */
+
+.icon.instagram i
+{
+    color: white;
+    transition: 0.5s;
+    margin: 5px;
+}
+
+.icon.instagram:hover
+{
+    background-color: rgba(81, 91, 212, 0.5);
+    box-shadow: 0 0 10px 4px rgba(81, 91, 212, 0.5);
+}
+
+.icon.instagram:hover > i
+{
+    color: #9198e5;
+}
+

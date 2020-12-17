@@ -1,0 +1,139 @@
+/*
+    Created: December 8, 2020
+    By: @Luka
+    Modified: None
+
+    Class: Buttons
+
+ */
+
+
+.btn
+{
+    border-radius: 4px;
+    padding: 15px 35px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    border: none;
+}
+
+
+/*
+    Types
+ */
+
+.btn.box-shadow
+{
+    box-shadow: none!important;
+}
+
+.btn.block
+{
+    border-radius: 0;
+}
+
+/*
+    Light Blue
+ */
+
+.btn.light-blue
+{
+    background-color: rgb(0, 170, 255);
+    color: white;
+    transition: 0.5s;
+}
+
+.btn.light-blue:hover
+{
+    background-color: rgb(0, 144, 516);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+/*
+    White
+ */
+
+.btn.white
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(44, 44, 44);
+    transition: 0.5s;
+}
+
+.btn.white:hover
+{
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*
+    red
+ */
+
+.btn.red
+{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    transition: 0.5s;
+}
+
+.btn.red:hover
+{
+    background-color: rgb(200, 0, 0);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*
+    orange
+ */
+
+.btn.orange
+{
+    background-color: rgb(255, 180, 0);
+    color: white;
+    transition: 0.5s;
+}
+
+.btn.orange:hover
+{
+    background-color: rgb(255, 150, 0);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*
+   purple
+ */
+
+.btn.purple
+{
+    background-color: rgb(150, 0, 255);
+    color: white;
+    transition: 0.5s;
+}
+
+.btn.purple:hover
+{
+    background-color: rgb(130, 0, 255);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*
+   pink
+ */
+
+.btn.pink
+{
+    background-color: rgb(255, 0, 255);
+    color: white;
+    transition: 0.5s;
+}
+
+.btn.pink:hover
+{
+    background-color: rgb(220, 0, 255);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,44 @@
+/*
+    Created: December 9, 2020
+    By: @Luka
+    Modified: None
+
+    Class: Buttons
+
+ */
+
+.ripple
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple span
+{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: Click 1s linear forwards;
+}
+
+/*
+    Keyframes
+ */
+
+ @keyframes Click
+ {
+     0%
+     {
+         width: 0;
+         height: 0;
+         opacity: 1;
+     }
+     100%
+     {
+         width: 250px;
+         height: 250px;
+         opacity: 0;
+     }
+ }

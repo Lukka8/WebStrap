@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+
+    <link rel="stylesheet" href="Assets/CSS/Main.css">
+</head>
+<body>
+    <section style="flex-direction: column">
+        <button class="btn ripple purple" data-object="modal">Click me</button>
+
+        <div class="modal-menu active" id="modal">
+            <div class="modal white">
+                <div class="modal-header">
+                    <h4>Title</h4>
+                    <button class="navbar-close">
+                        <img height="100%" width="100%" src="./Assets/Svg/Close.svg" alt="Close">
+                    </button>
+                </div>
+                <div class="modal-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestiae accusantium sed odit similique natus officiis modi debitis eos reprehenderit a, minus repellendus suscipit doloremque possimus blanditiis nostrum. Deleniti, illo?</p>
+                    <div class="shadow"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="ripple">Close</button>
+                    <button class="ripple">Accept</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./Assets/JavaScript/Main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+/*
+    Created: December 8, 2020
+    By: @Luka
+    Modified: December 12, 2020
+
+    Class: Navbar
+
+ */
+ 
+
+.navbar 
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+.navbar>a
+{
+    margin: 0 5px 0 0;
+}
+
+.navbar ul li a
+{
+    transition: 0.5s;
+}
+
+.navbar.center>a
+{
+    display: none;
+}
+
+.navbar.center
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar.left
+{
+    justify-content: flex-start;
+}
+
+.navbar.right
+{
+    justify-content: flex-end;
+}
+
+.navbar.right>a
+{
+    flex: 1;
+}
+
+
+.navbar>a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar>button
+{
+    display: none;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.navbar ul 
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.navbar ul li 
+{
+    padding: 15px 0;
+    margin: 0 5px 0 0;
+}
+
+.navbar ul li a 
+{
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px)
+{
+    .navbar>a
+    {
+        display: flex!important;
+        flex: 1;
+        grid-area: navbar-home;
+    }
+
+    .navbar ul 
+    {
+        flex-direction: column;
+        grid-area: navbar-itemlist;
+        display: none;
+    }
+
+    .navbar>button
+    {
+        grid-area: navbar-toggle;
+        display: block;
+    }
+
+    .navbar.toggle
+    {
+        animation: Navbar_Enabled 1s;
+        animation-timing-function: linear;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .navbar.toggle ul
+    {
+        display: flex;
+    }
+
+    .navbar
+    {
+        flex-direction: row!important;
+        justify-content: space-between!important;
+        align-items: center!important;
+        padding: 10px;
+        display: grid;
+        grid-template-areas: "navbar-home navbar-home navbar-home navbar-toggle" "navbar-itemlist navbar-itemlist navbar-itemlist navbar-itemlist";
+    }
+
+    .navbar.hide
+    {
+        animation: Navbar_Disabled 0.5s;
+        animation-timing-function: ease-out;
+        height: auto;
+        max-height: 100%;
+    }
+
+    .navbar.hide ul
+    {
+        display: flex!important;
+    }
+}
+
+
+/*
+    ligh blue
+*/
+
+.navbar.light-blue
+{
+    background-color: rgba(0, 170, 255);
+}
+
+.navbar.light-blue ul li a:hover
+{
+    background-color: rgba(0, 150, 255);
+}
+
+/*
+    red
+*/
+
+.navbar.red
+{
+    background-color: rgb(255, 0, 0);
+}
+
+.navbar.red ul li a:hover
+{
+    background-color: rgb(200, 0, 0);
+}
+
+/*
+    orange
+*/
+
+.navbar.orange
+{
+    background-color: rgb(255, 180, 0);
+}
+
+.navbar.orange ul li a:hover
+{
+    background-color: rgb(255, 150, 0);
+}
+
+/*
+    orange
+*/
+
+.navbar.purple
+{
+    background-color: rgb(150, 0, 255);
+}
+
+.navbar.purple ul li a:hover
+{
+    background-color: rgb(130, 0, 255);
+}
+
+/*
+    pink
+*/
+
+.navbar.pink
+{
+    background-color: rgb(255, 0, 255);
+}
+
+.navbar.pink ul li a:hover
+{
+    background-color: rgb(220, 0, 255);
+}
+
+@keyframes Navbar_Disabled {
+    from
+    {
+        max-height: 100%;
+    }
+    to 
+    {
+        max-height: 60px;
+    }
+}
+
+@keyframes Navbar_Enabled {
+    from
+    {
+        max-height: 60px;
+    }
+    to 
+    {
+        max-height: 100%;
+    }
+}
