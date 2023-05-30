@@ -1,0 +1,29 @@
+body, html {
+    background:black;
+    overflow:hidden;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  canvas{
+    background:#000;
+  }
+
+  #birthday-text {
+    color: white;
+    font-size: 36px;
+    z-index: 4;
+    position: absolute;
+  }
+
+  #birthday-sub-text {
+    color: white;
+    font-size: 28px;
+    z-index: 4;
+    position: absolute;
+    top: 55%;
+  }
